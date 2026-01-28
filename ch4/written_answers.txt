@@ -1,0 +1,3 @@
+4-15 What is the purpose of the comment that accompanies a function decla-
+ration?
+
