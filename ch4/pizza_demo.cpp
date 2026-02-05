@@ -6,7 +6,11 @@ using namespace std;
 float getRadius(float diameter);
 // Compute radius
 float getArea(float radius);
+// Compute area for circular pizza
+float getArea(float length, float width);
+// Compute area for rectangular pizza
 float computePrice(float price, float area);
+// Compute price per unit area
 
 int main(){
     float PRICE = 7.5;
@@ -33,6 +37,10 @@ float getRadius(float diameter){
 
 float getArea(float radius){
     return M_PI * radius * radius;
+}
+
+float getArea(float length, float width){
+    return length * width;
 }
 
 float computePrice(float price, float area){
