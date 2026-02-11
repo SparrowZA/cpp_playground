@@ -1,15 +1,14 @@
 {
     "tasks": [
         {
-            // "type": "cppbuild",
+            "type": "cppbuild",
             "label": "C/C++: cl.exe build active file",
-            "type": "shell",
-            "command": "${workspaceFolder}\\build_cl.bat",
+            "command": "cl.exe",
             "args": [
                 "/Zi",
                 "/EHsc",
                 "/nologo",
-                "/Fe${fileDirname}\\build\\${fileBasenameNoExtension}.exe",
+                "/Fe${fileDirname}\\bin\\${fileBasenameNoExtension}.exe",
                 "${file}"
             ],
             "options": {
