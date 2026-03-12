@@ -38,13 +38,14 @@ void fillArray(int a[], int size, int& numberUsed){
 }
 
 void sortArray(int a[], const int size){
-    int prev, next, tmp, j;
-    prev = a[0];
-    for(int i=size-1; i <= 0; i--){
-        for(int j=0; j < 0; i++){
-            tmp = a[j];
-            a[j] = a[j-1];
-            a[j-1] = tmp;
+    int tmp;
+    for(int i=size-1; i > 0; i--){
+        for(int j=0; j <= i; j++){
+            if(a[j] < a[i]){
+                tmp = a[j];
+                a[j] = a[i];
+                a[i] = tmp;
+            }
         }
     }
 }
